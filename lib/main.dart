@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
                       heightFactor: kSpacingUnit.w * 1.5,
                       widthFactor: kSpacingUnit.w * 1.5,
                       child: Icon(
-                        LineAwesomeIcons.pen,
+                        LineAwesomeIcons.plus,
                         color: kDarkPrimaryColor,
                         size: ScreenUtil().setSp(kSpacingUnit.w * 1.5),
                       ),
@@ -154,10 +154,15 @@ class ProfileScreen extends StatelessWidget {
                         },
                       ),
                       RaisedButton(color: Colors.green ,
-                        onPressed: () {},
+
                         child: Text("Book",
                             style: TextStyle(
                                 fontSize: 20, letterSpacing: 2.2, color: Colors.white)),
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                            return  MyApp();
+                          }));
+                        },
                       ),
                       RaisedButton( color: Colors.green,
                         child: Text("Setting"  , style: TextStyle(fontSize: 20, letterSpacing: 2.2, color: Colors.white)),

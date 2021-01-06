@@ -172,7 +172,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             Icon(
               Icons.arrow_forward_ios,
-              color: Colors.grey,
+              color: Colors.green,
             ),
           ],
         ),
